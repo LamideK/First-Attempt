@@ -1,0 +1,29 @@
+from pip._vendor.distlib.compat import raw_input
+
+#Get item name
+itemName = raw_input('What did you buy?')
+print(itemName)
+print()
+
+#get item cost
+firstN: int = raw_input('Please enter the cost of the item')
+print: int(firstN)
+print()
+
+#get item quantity
+secondN: int = raw_input('Please enter the quantity of said item')
+print: int(secondN)
+print()
+
+#get amount paid
+cash: int = raw_input('How much are you paying?')
+print: int(cash)
+print()
+
+#calculate price and balance
+price: int = int(firstN) * int(secondN)
+balance: int = int(cash) - (price)
+
+#print output
+print('You bought', secondN, ' units of', itemName, 'at', firstN)
+print('You paid:',cash, 'and your balance is:', balance)
